@@ -5,7 +5,6 @@ import Register from './components/Register';
 import Home from './components/Home';
 import Login from './components/Login';
 import Profile from './components/Profile';
-import Error from './components/Error';
 import  MainStateProvider  from './MainStateProvider';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { NavBar } from './style';
@@ -31,7 +30,6 @@ class App extends Component{
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/login" component={Login} />
                 <ProtectedRoute exact path="/profile" component={Profile} />
-                <Route exact path="/error" component={Error} />
                 <Route path="*" component={() => '404 NOT FOUND'} />
               </Switch>
             </div>
